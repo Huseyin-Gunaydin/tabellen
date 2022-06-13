@@ -9,7 +9,7 @@
   <style>
    table, th, td{
   border: thin solid #202020;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 1rem;
 }
 
@@ -33,19 +33,36 @@ th{
   background-color: #f1f3f4;
   font-weight: 700;
 }
+tbody tr:nth-child(1)
+{
+  color: red;
+}
+h1{
+  color: red;
+}
+div{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
   </style>
   <body>
+    <div>
+      <h1>Kundendaten</h1>
     <table>
       <tr>
-        <th>ID</th>
-        <th>Vorname</th>
-        <th>Nachname</th>
-        <th>Firma</th>
-        <th>Abteilung</th>
-        <th>Beruf</th>
-        <th>E-Mail</th>
-        <th>Standort</th>
-        <th>Telefonnumm</th>
+        <th scope="col">ID</th>
+        <th scope="col">Vorname</th>
+        <th scope="col">Nachname</th>
+        <th scope="col">Firma</th>
+        <th scope="col">Abteilung</th>
+        <th scope="col">Beruf</th>
+        <th scope="col">E-Mail</th>
+        <th scope="col">Standort</th>
+        <th scope="col">Telefonnumm</th>
       </tr>
 
       <tr>
@@ -167,6 +184,7 @@ th{
         <td>+86 260 677 3127</td>
       </tr>
     </table>
+  </div>
   </body>
 </html>
 
